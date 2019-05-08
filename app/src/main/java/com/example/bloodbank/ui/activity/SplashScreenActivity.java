@@ -8,7 +8,6 @@ import android.os.Bundle;
 import com.example.bloodbank.ui.activity.AuthenticationActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
