@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">BloodBank</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--intro-->
     <string name="skip_button_intro">تخطي</string>
+    <!--Login-->
+    <string name="phone_number">الجوال</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">هل نسيت كلمة المرور</string>
+    <string name="remember_me">تذكرنى</string>
+    <string name="login">دخول</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="logo">Logo</string>
 </resources>
