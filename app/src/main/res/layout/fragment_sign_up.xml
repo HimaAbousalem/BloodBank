@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Signup_Fragment_toolbar"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:background="@color/lightGray"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Signup_Fragment_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:text="@string/create_new_account"
+        android:textAlignment="center"
+        android:textColor="@color/buttons"
+        android:textSize="@dimen/size_24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Signup_Fragment_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_name_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_toolbar"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_email_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_name_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_name_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_name_edittext"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_birthdate_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:drawableStart="@drawable/ic_calender"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/birth_date"
+        android:inputType="date"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_email_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_email_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_email_edittext"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_blood_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/blood_type"
+        android:inputType="textPersonName"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_birthdate_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_birthdate_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_birthdate_edittext"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_last_donated_date_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:drawableStart="@drawable/ic_calender"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/last_donate_date"
+        android:inputType="date"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_8dp"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_blood_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_blood_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_blood_edittext"
+        tools:ignore="Autofill" />
+
+    <Spinner
+        android:id="@+id/Signup_Fragment_state_spinner"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/bg_spinner"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/spinnerItems"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="viewEnd"
+        android:textDirection="firstStrongRtl"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_last_donated_date_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_last_donated_date_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_last_donated_date_edittext" />
+
+    <Spinner
+        android:id="@+id/Signup_Fragment_City_spinner"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/bg_spinner"
+        android:entries="@array/spinnerItems"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:textAlignment="viewEnd"
+        android:textDirection="firstStrongRtl"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_state_spinner"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_state_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_state_spinner" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_phone_number_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/phone_number3"
+        android:inputType="phone"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_City_spinner"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_City_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_City_spinner"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_password_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_phone_number_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_phone_number_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_phone_number_edittext"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Signup_Fragment_retry_password_edittext"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_text_without_boarder"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:hint="@string/retry_password"
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_4dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_password_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_password_edittext"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/Signup_Fragment_register_btn"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:background="@color/buttons"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_Fragment_retry_password_edittext"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Fragment_retry_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Fragment_retry_password_edittext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

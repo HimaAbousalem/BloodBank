@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryDark">#24333F</color>
+    <color name="colorAccent">#3a97d4</color>
     <!--intro colors-->
     <color name="activeDots">#181717</color>
     <color name="inactiveDots">#C9C7C7</color>
-    <color name="lightGray">#CFCCCC</color>
-
+    <color name="lightGray">#EBEBED</color>
+    <!--loginFragment-->
+    <color name="lightGreen">#3AB54A</color>
+    <color name="buttons">#2C3F4D</color>
 </resources>

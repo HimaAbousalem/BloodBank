@@ -4,10 +4,36 @@
     <string name="skip_button_intro">تخطي</string>
     <!--Login-->
     <string name="phone_number">الجوال</string>
+    <string name="phone_number2">رقم الجوال</string>
     <string name="password">كلمة المرور</string>
     <string name="forget_password">هل نسيت كلمة المرور</string>
+    <string name="forget_password_screen">نسيت كلمة المرور</string>
     <string name="remember_me">تذكرنى</string>
     <string name="login">دخول</string>
     <string name="create_new_account">انشاء حساب جديد</string>
     <string name="logo">Logo</string>
+    <string name="send">ارسال</string>
+    <string name="change_password_code">كود تغيير كلمة المرور</string>
+    <string name="verifying_code">كود التحقق</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="retry_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="change_password_button">تغيير كلمة المرور</string>
+    <!--Sign up-->
+    <string name="name">الاسم</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="birth_date">تاريخ الميلاد</string>
+    <string name="blood_type">فصيلة الدم</string>
+    <string name="last_donate_date">اخر تاريخ للتبرع</string>
+    <string name="state">المحافظة</string>
+    <string name="city">المدينة</string>
+    <string name="phone_number3">رقم الهاتف</string>
+    <string name="retry_password">تأكيد كلمة المرور</string>
+    <string name="register">تسجيل</string>
+    <string-array name="spinnerItems">
+        <item>المحافظة</item>
+        <item>القاهرة</item>
+        <item>القليوبيه</item>
+        <item>الجيزة</item>
+        <item>الدقهلية</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.bloodbank.dagger.module
+package com.example.bloodbank.dagger.module.app
 
 import com.example.bloodbank.data.api.ApiServices
 import com.example.bloodbank.dagger.scope.ApplicationScope
@@ -16,16 +16,17 @@ import retrofit2.converter.gson.GsonConverterFactory
 @Module(includes = [NetworkModule::class])
 class ApiServiceModule {
 
-    val gson: Gson
-        @ApplicationScope
-        @Provides
-        get() = GsonBuilder()
+    @ApplicationScope
+    @Provides
+    fun getGson():Gson{
+        return GsonBuilder()
                 .excludeFieldsWithoutExposeAnnotation()
                 .create()
+    }
 
     @ApplicationScope
     @Provides
-    fun getMovieService(retrofit: Retrofit): ApiServices {
+    fun getApiService(retrofit: Retrofit): ApiServices {
         return retrofit.create(ApiServices::class.java)
     }
 

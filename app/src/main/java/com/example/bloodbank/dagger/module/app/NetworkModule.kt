@@ -1,8 +1,8 @@
-package com.example.bloodbank.dagger.module
+package com.example.bloodbank.dagger.module.app
 
+import android.app.Application
 import android.content.Context
 
-import com.example.bloodbank.dagger.qualifier.ApplicationContext
 import com.example.bloodbank.dagger.scope.ApplicationScope
 import com.example.bloodbank.utils.HTTP_CACHE_DIR
 import com.example.bloodbank.utils.HTTP_CACHE_SIZE
@@ -18,6 +18,7 @@ import timber.log.Timber
 
 @Module(includes = [ApplicationModule::class])
 class NetworkModule {
+
     @ApplicationScope
     @Provides
     fun getOkHttpClient(loggingInterceptor: HttpLoggingInterceptor, cache: Cache): OkHttpClient {
@@ -29,7 +30,7 @@ class NetworkModule {
 
     @ApplicationScope
     @Provides
-    fun cache(@ApplicationContext context: Context): Cache {
+    fun cache(context: Application): Cache {
         return Cache(File(context.cacheDir, HTTP_CACHE_DIR), HTTP_CACHE_SIZE.toLong())
     }
 

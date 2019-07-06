@@ -1,15 +1,15 @@
 package com.example.bloodbank.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
 
 import com.example.bloodbank.R
 import com.example.bloodbank.ui.adapter.IntroPagerAdapter
+import com.example.bloodbank.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 
-class WelcomeActivity : AppCompatActivity() {
+class WelcomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

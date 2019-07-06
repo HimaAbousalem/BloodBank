@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Spinner_Text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/cairo_semibold"
+    android:paddingStart="@dimen/dimen_8dp"
+    android:paddingEnd="@dimen/dimen_8dp"
+    android:textAlignment="textStart"
+    android:hint="@string/state"
+    android:textColorHint="@android:color/darker_gray"
+    android:textSize="@dimen/size_18sp"
+    tools:text="@string/state" />
+

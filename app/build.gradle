@@ -5,6 +5,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.example.bloodbank"
         minSdkVersion 17
         targetSdkVersion 28
