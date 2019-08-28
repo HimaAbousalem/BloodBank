@@ -1,6 +1,6 @@
 package com.example.bloodbank.dagger.module.controller
 
-import com.example.bloodbank.dagger.scope.ActivityScope
+import com.example.bloodbank.dagger.scope.ControllerScope
 import com.example.bloodbank.ui.fragment.ChangePasswordFragment
 import com.example.bloodbank.ui.fragment.ForgetPasswordFragment
 import com.example.bloodbank.ui.fragment.LoginFragment
@@ -11,25 +11,25 @@ import dagger.Provides
 @Module
 class MainModule{
 
-    @ActivityScope
+    @ControllerScope
     @Provides
     fun provideLoginFragment():LoginFragment{
         return LoginFragment()
     }
 
-    @ActivityScope
+    @ControllerScope
     @Provides
     fun provideSignupFragment():SignupFragment{
         return SignupFragment()
     }
 
-    @ActivityScope
+    @ControllerScope
     @Provides
     fun provideForgetPasswordFragment():ForgetPasswordFragment{
         return ForgetPasswordFragment()
     }
 
-    @ActivityScope
+    @ControllerScope
     @Provides
     fun provideChangePasswordFragment():ChangePasswordFragment{
         return ChangePasswordFragment()

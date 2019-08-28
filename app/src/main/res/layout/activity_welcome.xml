@@ -7,16 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.WelcomeActivity">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/Welcome_Activity_Pager"
-        android:layout_width="@dimen/dimen_0dp"
-        android:layout_height="@dimen/dimen_0dp"
-        android:layout_marginBottom="@dimen/dimen_8dp"
-        app:layout_constraintBottom_toTopOf="@+id/Welcome_Activity_Skip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/Welcome_Activity_Skip"
         android:layout_width="@dimen/dimen_0dp"
@@ -32,4 +22,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/Welcome_Activity_Pager"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

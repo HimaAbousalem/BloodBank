@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 
 import com.example.bloodbank.dagger.scope.ApplicationScope
+import com.example.bloodbank.error.ErrorInterceptor
 import com.example.bloodbank.utils.HTTP_CACHE_DIR
 import com.example.bloodbank.utils.HTTP_CACHE_SIZE
 
@@ -24,6 +25,7 @@ class NetworkModule {
     fun getOkHttpClient(loggingInterceptor: HttpLoggingInterceptor, cache: Cache): OkHttpClient {
         return OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
+                .addInterceptor(ErrorInterceptor())
                 .cache(cache)
                 .build()
     }
