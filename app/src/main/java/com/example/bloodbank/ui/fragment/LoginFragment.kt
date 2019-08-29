@@ -77,6 +77,7 @@ class LoginFragment : BaseFragment() {
         //first we need to make request to api using this LoginRequest.
         // this code belongs to ViewModel Class.
         disposable?.add(loginViewModel.signInUser(loginRequest)
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
                     when(it){

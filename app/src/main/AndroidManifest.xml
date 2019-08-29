@@ -15,7 +15,8 @@
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
         <activity android:name=".ui.activity.MainActivity"/>
         <activity android:name=".ui.activity.WelcomeActivity" />
-        <activity android:name=".ui.activity.AuthenticationActivity" />
+        <activity android:windowSoftInputMode="adjustResize"
+            android:name=".ui.activity.AuthenticationActivity" />
         <activity
             android:name=".ui.activity.SplashScreenActivity"
             android:theme="@style/SplashTheme">

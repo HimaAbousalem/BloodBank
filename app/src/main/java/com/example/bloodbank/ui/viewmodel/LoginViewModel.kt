@@ -17,7 +17,6 @@ class LoginViewModel @Inject constructor(private val userRepository: UserReposit
 
     fun signInUser(loginRequest: LoginRequest): Observable<AuthenticationStates> =
          userRepository.signInUser(loginRequest)
-                .subscribeOn(Schedulers.io())
                 .map<AuthenticationStates>{
                     signInResponse-> Success(signInResponse)
                 }
